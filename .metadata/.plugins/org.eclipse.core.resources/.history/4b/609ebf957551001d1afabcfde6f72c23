@@ -1,0 +1,40 @@
+package persistencia;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entidade.Entidade;
+
+public class LivroPersistencia extends Persistencia{
+	private static List<Entidade> livros = new ArrayList<Entidade>();
+
+	//Declaração da classe como singleton
+	private static LivroPersistencia uniqueInstance;
+	
+	private LivroPersistencia() {
+	}
+	public static synchronized LivroPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new LivroPersistencia();
+
+		return uniqueInstance;
+	}
+	//-------------------------------------------
+	public void alterar() {
+			
+	}
+	public void excluir() {
+		
+	}
+	public void buscaPorId() {
+		
+	}
+	public void buscaPorString() {
+			
+		}
+	@Override
+	public void inserir(Entidade entidade) {
+		// TODO Auto-generated method stub
+		
+	}
+}

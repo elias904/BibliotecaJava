@@ -1,0 +1,14 @@
+package Fabrica;
+
+import entidade.Livro;
+
+public interface Fabrica<Type> {
+	//Método abstrato para o abstract factory
+	    abstract Type create(String packageType) ;
+	//Métodos abstrato para serem sobscritos nas subclasses
+	    abstract Livro createEntidade();
+	    abstract void createPersistencia();
+	    abstract void createControlador();
+	    abstract void createVisao();
+
+}

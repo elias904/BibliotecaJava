@@ -1,0 +1,15 @@
+package controlador;
+
+import Fabrica.Fabrica;
+import entidade.EmprestimoEntidade;
+import persistencia.Persistencia;
+
+public class EmprestimoControlador extends Controlador{
+	Fabrica fabrica = Fabrica.getFactory("Emprestimo");
+	Persistencia persistencia;
+	public void insereArray(EmprestimoEntidade emprestimo, int opcao) {
+		// TODO Auto-generated method stub
+		persistencia = fabrica.createPersistencia();
+		persistencia.inserir(emprestimo);
+	}
+}

@@ -1,0 +1,16 @@
+package persistencia;
+
+public class EmprestimoPersistencia {
+	//Declaração da classe como singleton
+	private static EmprestimoPersistencia uniqueInstance;
+	
+	private EmprestimoPersistencia() {
+	}
+	public static synchronized EmprestimoPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new EmprestimoPersistencia();
+
+		return uniqueInstance;
+	}
+	//------------------------------------
+}

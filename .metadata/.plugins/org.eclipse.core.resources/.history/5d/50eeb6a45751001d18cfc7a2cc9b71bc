@@ -1,0 +1,36 @@
+package visao;
+
+import Fabrica.Fabrica;
+import controlador.Controlador;
+import entidade.Entidade;
+
+public class LivroVisao extends Visao{	
+	@Override
+	public void menu(Fabrica fabricaEspecifica) {
+		// TODO Auto-generated method stub
+        Entidade entidade = fabricaEspecifica.createEntidade();
+        Controlador controlador = fabricaEspecifica.createControlador();
+        Persistencia persistencia = fabricaEspecifica.createPersistencia();
+        
+		int opcao = -1;
+		while(opcao != 0) 
+		{
+			System.out.println("1 - Cadastrar Livro");
+			System.out.println("2 - Visualizar Livro");
+			System.out.println("0 - Retornar");
+			
+			opcao = Integer.parseInt(Console.readLine());
+			
+			 switch (opcao) {
+
+		        case 1:		        	
+		            break;
+		        case 2:
+		        	break;
+		        default:
+		            System.out.println("Opcao Invalida!");
+		     }
+		}
+		
+	}
+}

@@ -1,0 +1,24 @@
+package controlador;
+
+import java.io.IOException;
+
+import Fabrica.Fabrica;
+import entidade.EmprestimoEntidade;
+import persistencia.Persistencia;
+
+public class EmprestimoControlador extends Controlador{
+	Fabrica fabrica = Fabrica.getFactory("Emprestimo");
+	Persistencia persistencia;
+	public void insereArray(EmprestimoEntidade emprestimo, int opcao) throws IOException {
+		// TODO Auto-generated method stub
+		persistencia = fabrica.createPersistencia();
+		persistencia.inserir(emprestimo);
+	}
+	@Override
+	public void alterarEmprestimo(EmprestimoEntidade emprestimoAntigo, EmprestimoEntidade emprestimoNovo) {
+		// TODO Auto-generated method stub
+		persistencia = fabrica.createPersistencia();
+		persistencia.alterar(emprestimoNovo,emprestimoAntigo);
+		
+	}
+}

@@ -1,0 +1,15 @@
+package Fabrica;
+
+public class DistribuicaoFabrica {
+	 public static Fabrica getFactory(String choice){
+	        
+	        if("".equalsIgnoreCase(choice)){
+	            return new AnimalFactory();
+	        }
+	        else if("Color".equalsIgnoreCase(choice)){
+	            return new ColorFactory();
+	        }
+	        
+	        return null;
+	    }
+}

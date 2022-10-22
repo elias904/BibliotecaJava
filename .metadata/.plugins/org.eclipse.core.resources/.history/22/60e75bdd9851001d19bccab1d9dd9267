@@ -1,0 +1,13 @@
+package controlador;
+
+import java.io.IOException;
+
+import entidade.EmprestimoEntidade;
+
+public abstract class Controlador {
+
+	public abstract void insereArray(EmprestimoEntidade emprestimo, int opcao) throws IOException;
+
+	public abstract void alterarEmprestimo(EmprestimoEntidade emprestimoAntigo, EmprestimoEntidade emprestimoNovo);
+
+	public abstract void excluir(EmprestimoEntidade emprestimo);

@@ -1,0 +1,11 @@
+package persistencia;
+
+import entidade.EmprestimoEntidade;
+
+public abstract class Persistencia {
+	public abstract void inserir(Entidade emprestimo);
+	public abstract void alterar();
+	public abstract void excluir();
+	public abstract void buscaPorId() ;
+	public abstract void buscaPorString();
+}

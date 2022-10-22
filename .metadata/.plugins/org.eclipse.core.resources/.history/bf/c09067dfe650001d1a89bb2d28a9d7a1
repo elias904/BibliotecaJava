@@ -1,0 +1,31 @@
+package persistencia;
+
+public class LivroPersistencia {
+	//Declaração da classe como singleton
+	private static LivroPersistencia uniqueInstance;
+	
+	private LivroPersistencia() {
+	}
+	public static synchronized LivroPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new LivroPersistencia();
+
+		return uniqueInstance;
+	}
+	//-------------------------------------------
+	public void inserir() {
+		
+	}
+	public void alterar() {
+			
+		}
+	public void excluir() {
+		
+	}
+	public void buscaPorId() {
+		
+	}
+	public void buscaPorString() {
+			
+		}
+}

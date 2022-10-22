@@ -1,0 +1,29 @@
+package Fabrica;
+
+public class EmprestimoFabrica implements Fabrica<Object> {
+
+	@Override
+	public void createEntidade() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void createPersistencia() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void createControlador() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void createVisao() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

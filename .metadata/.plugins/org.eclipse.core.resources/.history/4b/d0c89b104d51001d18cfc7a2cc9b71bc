@@ -1,0 +1,27 @@
+package Fabrica;
+
+import entidade.Entidade;
+import persistencia.Persistencia;
+import controlador.Controlador;
+import visao.Visao;
+
+
+public abstract class Fabrica {
+	//Métodos abstrato para serem sobscritos nas subclasses
+	    abstract Entidade createEntidade();
+	    abstract Persistencia createPersistencia();
+	    abstract Controlador createControlador();
+	    abstract Visao createVisao();
+
+	    public static Fabrica getFactory(String choice){
+	        
+	        if("Entidade".equalsIgnoreCase(choice)){
+	            return new Fabrica;
+	        }
+	        else if("Color".equalsIgnoreCase(choice)){
+	            return new ColorFactory();
+	        }
+	        
+	        return null;
+	    }
+}

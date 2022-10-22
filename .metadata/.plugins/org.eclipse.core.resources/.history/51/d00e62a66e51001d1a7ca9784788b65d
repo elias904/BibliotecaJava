@@ -1,0 +1,29 @@
+package entidade;
+
+public abstract class Entidade {
+	public Integer id; 
+	
+	
+	public String toString(int x) 
+	{
+		String str = Integer.toString(x);
+		return str;
+	}
+	public String toString(float x) 
+	{
+		String str = Float.toString(x);
+		return str;
+	}
+	public String toString(Double x) 
+	{
+		String str = Double.toString(x);
+		return str;
+	}
+	
+	public abstract String getNomeLivro();
+	public abstract void setNomeLivro(String nomeLivro);
+	
+	//Métodos da classe EmprestimoEntidade
+	public String getMatriculaAluno() {return matriculaAluno;}
+	public abstract void setMatriculaAluno(String matriculaAluno);
+}

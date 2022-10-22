@@ -1,0 +1,9 @@
+package Fabrica;
+
+public abstract class Fabrica {
+	    abstract void createEntidade();
+	    abstract void createPersistencia();
+	    abstract void createControlador();
+	    abstract void createVisao();
+
+}

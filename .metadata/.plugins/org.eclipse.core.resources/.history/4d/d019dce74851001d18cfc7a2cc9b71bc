@@ -1,0 +1,9 @@
+package visao;
+
+public class LivroVisao extends Visao{
+	public void MenuLivroVisao() {
+		System.out.println("1 - Cadastrar Livro");
+		System.out.println("2 - Visualizar Livro");
+		System.out.println("0 - Retornar");
+	}
+}

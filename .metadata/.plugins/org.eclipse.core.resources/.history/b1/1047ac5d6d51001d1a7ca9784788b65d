@@ -1,0 +1,9 @@
+package entidade;
+
+import java.util.Date;
+
+public class EmprestimoEntidade extends Entidade{
+	public String nomeLivro;
+	public String matriculaAluno;
+	
+}

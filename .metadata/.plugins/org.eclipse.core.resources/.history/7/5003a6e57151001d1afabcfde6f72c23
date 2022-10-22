@@ -1,0 +1,10 @@
+package controlador;
+
+import entidade.EmprestimoEntidade;
+
+public class EmprestimoControlador extends Controlador{
+	public void insereArray(EmprestimoEntidade emprestimo, int opcao) {
+		// TODO Auto-generated method stub
+		
+	}
+}

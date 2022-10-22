@@ -1,0 +1,13 @@
+package Fabrica;
+
+
+import entidade.LivroEntidade;
+
+public interface Fabrica<Type> {
+	//Métodos abstrato para serem sobscritos nas subclasses
+	    abstract Type createEntidade();
+	    abstract Type createPersistencia();
+	    abstract Type createControlador();
+	    abstract Type createVisao();
+
+}

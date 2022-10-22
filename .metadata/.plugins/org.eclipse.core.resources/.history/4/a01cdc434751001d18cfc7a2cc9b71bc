@@ -1,0 +1,12 @@
+package Fabrica;
+
+import entidade.Entidade;
+
+public interface Fabrica {
+	//Métodos abstrato para serem sobscritos nas subclasses
+	    abstract Entidade createEntidade();
+	    abstract Type createPersistencia();
+	    abstract Type createControlador();
+	    abstract Type createVisao();
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/eliasmnds/Desktop/UFSJ 2022.2/EngSoftware/Biblioteca/.metadata/.plugins/org.eclipse.jdt.core
+1549276428.index
+537477740.index
+1865797976.index

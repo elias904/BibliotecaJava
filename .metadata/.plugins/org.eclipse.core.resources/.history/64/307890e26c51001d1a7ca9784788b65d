@@ -1,0 +1,42 @@
+package entidade;
+
+import java.util.Date;
+
+public class EmprestimoEntidade extends Entidade{
+	public Date dataEmprestimo = new Date();
+	public Date dataDevolucao = new Date();
+	public String nomeLivro;
+	public String matriculaAluno;
+	public Integer idEmprestimo;
+	
+	public Date getDataEmprestimo() {
+		return dataEmprestimo;
+	}
+	public void setDataEmprestimo(Date dataEmprestimo) {
+		this.dataEmprestimo = dataEmprestimo;
+	}
+	public Date getDataDevolucao() {
+		return dataDevolucao;
+	}
+	public void setDataDevolucao(Date dataDevolucao) {
+		this.dataDevolucao = dataDevolucao;
+	}
+	public String getNomeLivro() {
+		return nomeLivro;
+	}
+	public void setNomeLivro(String nomeLivro) {
+		this.nomeLivro = nomeLivro;
+	}
+	public String getMatriculaAluno() {
+		return matriculaAluno;
+	}
+	public void setMatriculaAluno(String matriculaAluno) {
+		this.matriculaAluno = matriculaAluno;
+	}
+	public Integer getIdEmprestimo() {
+		return idEmprestimo;
+	}
+	public void setIdEmprestimo(Integer idEmprestimo) {
+		this.idEmprestimo = idEmprestimo;
+	}
+}

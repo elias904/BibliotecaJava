@@ -1,0 +1,33 @@
+package persistencia;
+
+import entidade.LivroEntidade;
+
+public class LivroPersistencia {
+	//Declaração da classe como singleton
+	private static LivroPersistencia uniqueInstance;
+	
+	private LivroPersistencia() {
+	}
+	public static synchronized LivroPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new LivroPersistencia();
+
+		return uniqueInstance;
+	}
+	//-------------------------------------------
+	public void inserir(LivroEntidade livro) {
+		
+	}
+	public void alterar(LivroEntidade livro) {
+			
+	}
+	public void excluir(LivroEntidade livro) {
+		
+	}
+	public void buscaPorId(LivroEntidade livro) {
+		
+	}
+	public void buscaPorString(LivroEntidade livro) {
+			
+		}
+}

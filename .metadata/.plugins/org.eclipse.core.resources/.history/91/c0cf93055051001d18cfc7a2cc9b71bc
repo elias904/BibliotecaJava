@@ -1,0 +1,26 @@
+package visao;
+
+import Fabrica.Fabrica;
+
+public class Visao {
+	//Dentro de visao deve exister somente Sair,Livro,Emprestimo
+	//Quando entramos no livro, temos que abrir as opções lá
+	public static void main(String[] args) {
+        int opcao = -1;
+        LivroVisao livroVisao;
+
+
+        while(opcao != 0) {
+            System.out.println("Menu");
+            System.out.println("1 - Livro");
+            System.out.println("2 - Emprestimo");
+            System.out.println("0 - Sair");
+           
+        
+
+        opcao = Integer.parseInt(Console.readLine());
+        
+        Fabrica fabrica = Fabrica.getFactory(opcao);
+        }
+    }
+}

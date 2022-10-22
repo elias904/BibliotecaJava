@@ -1,0 +1,43 @@
+package persistencia;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entidade.Entidade;
+
+public class EmprestimoPersistencia extends Persistencia{
+	//Lista de Emprestimo
+	private static List<Entidade> emprestimos = new ArrayList<Entidade>();
+	//Declaração da classe como singleton
+	private static EmprestimoPersistencia uniqueInstance;
+	
+	private EmprestimoPersistencia() {
+	}
+	public static synchronized EmprestimoPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new EmprestimoPersistencia();
+
+		return uniqueInstance;
+	}
+	//------------------------------------
+	public void alterar() {
+			
+	}
+	public void excluir() {
+		
+	}
+	public void buscaPorId() {
+		
+	}
+	public void buscaPorString() {
+			
+		}
+	//Criar metodo para salvar o array no arquivo
+	//Criar metodo para ler o arquivo e salvar no arrays
+	@Override
+	public void inserir(Entidade emprestimo) {
+		// TODO Auto-generated method stub
+		emprestimo.setId(emprestimos.size() + 1);
+		emprestimos.add(emprestimo);
+	}
+}

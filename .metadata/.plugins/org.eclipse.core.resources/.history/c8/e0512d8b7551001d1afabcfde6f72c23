@@ -1,0 +1,11 @@
+package persistencia;
+
+import entidade.Entidade;
+
+public abstract class Persistencia {
+	public abstract void inserir(Entidade entidade);
+	public abstract void alterar();
+	public abstract void excluir();
+	public abstract void buscaPorId() ;
+	public abstract void buscaPorString();
+}

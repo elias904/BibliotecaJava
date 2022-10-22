@@ -1,0 +1,38 @@
+package visao;
+
+import Fabrica.Fabrica;
+import controlador.Controlador;
+import entidade.Entidade;
+
+public class Visao {
+	//Dentro de visao deve exister somente Sair,Livro,Emprestimo
+	//Quando entramos no livro, temos que abrir as opções lá
+	public static void main(String args[]) {
+		menu();
+		
+	}
+	public static void menu() {
+        int opcao = -1;
+
+
+        while(opcao != 0) 
+        {
+            System.out.println("Menu");
+            System.out.println("1 - Livro");
+            System.out.println("2 - Emprestimo");
+            System.out.println("0 - Sair");
+           
+        
+
+        opcao = Integer.parseInt(Console.readLine());
+        
+        //1 - Livro, 2 - Emprestimo
+        Fabrica fabricaGeral = Fabrica.getFactory(opcao);
+        
+        Visao visao = fabricaGeral.createVisao();
+        Entidade entidade = fabricaGeral.createEntidade();
+        Controlador controlador = fabricaGeral.createControlador();
+     
+        }
+    }
+}

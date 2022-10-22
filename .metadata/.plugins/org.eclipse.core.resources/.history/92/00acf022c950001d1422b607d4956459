@@ -1,0 +1,10 @@
+package entidade;
+import java.util.*;
+
+public class Emprestimo {
+	public Date dataEmprestimo = new Date();
+	public Date dataDevolucao = new Date();
+	public String nomeLivro;
+	public String matriculaAluno;
+
+}

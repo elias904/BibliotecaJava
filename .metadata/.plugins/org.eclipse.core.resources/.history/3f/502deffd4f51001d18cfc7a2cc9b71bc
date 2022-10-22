@@ -1,0 +1,32 @@
+package Fabrica;
+
+import entidade.Entidade;
+import persistencia.Persistencia;
+import controlador.Controlador;
+import visao.Visao;
+
+
+public abstract class Fabrica {
+	
+	public static Fabrica getFactory(int tipo) 
+	{
+		//1 - Livro
+		Fabrica fabrica = null;
+		if(tipo == 1)) 
+		{
+			fabrica = new LivroFabrica();
+		}
+		//2 - Emprestimo
+		else if(tipo == 2) 
+		{
+			fabrica = new EmprestimoFabrica();
+		}
+		return fabrica;
+	}
+	//Métodos abstrato para serem sobscritos nas subclasses
+	    abstract Entidade createEntidade();
+	    abstract Persistencia createPersistencia();
+	    abstract Controlador createControlador();
+	    abstract Visao createVisao();
+	    
+}

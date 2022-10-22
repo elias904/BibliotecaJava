@@ -1,0 +1,12 @@
+package entidade;
+
+import java.util.Date;
+
+public class EmprestimoEntidade extends Entidade{
+	public Date data = new Date();
+	public String nomeLivro;
+	public String matriculaAluno;
+	public Integer id;
+	
+	
+}

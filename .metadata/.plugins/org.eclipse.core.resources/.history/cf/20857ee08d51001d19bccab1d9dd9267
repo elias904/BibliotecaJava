@@ -1,0 +1,74 @@
+package persistencia;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import Fabrica.Fabrica;
+import entidade.EmprestimoEntidade;
+import entidade.Entidade;
+
+public class EmprestimoPersistencia extends Persistencia{
+	static java.io.File diretorio = null;
+	static java.io.File arquivo;
+	private static FileWriter texto = null;
+	private static PrintWriter escrito = null;
+	//Lista de Emprestimo
+	private static List<Entidade> emprestimos = new ArrayList<Entidade>();
+	//Declaração da classe como singleton
+	private static EmprestimoPersistencia uniqueInstance;
+	
+	private EmprestimoPersistencia() {
+	}
+	public static synchronized EmprestimoPersistencia getInstance() {
+		if (uniqueInstance == null)
+			uniqueInstance = new EmprestimoPersistencia();
+			diretorio = new java.io.File("/home/eliasmnds/Desktop/UFSJ 2022.2/EngSoftware");
+			arquivo = new java.io.File(diretorio, "emprestimos.txt");
+		return uniqueInstance;
+	}
+	//------------------------------------
+	//Criar metodo para salvar o array no arquivo
+	//Criar metodo para ler o arquivo e salvar no arrays
+	@Override
+	public void inserir(Entidade emprestimo) throws IOException {
+		// TODO Auto-generated method stub
+		emprestimo.setId(emprestimos.size() + 1);
+		emprestimos.add(emprestimo);
+		escreverArquivo((EmprestimoEntidade) emprestimo);
+	}
+	private void escreverArquivo(EmprestimoEntidade emprestimo) throws IOException {
+		// TODO Auto-generated method stub
+		texto = new FileWriter(arquivo, true);
+		escrito = new PrintWriter(texto);
+		escrito.println("\nEmprestimo:");
+		escrito.println("\tId: " + emprestimo.getId() + " ");
+		escrito.println("\tNome do Livro: " + emprestimo.getNomeLivro() + " ");
+		escrito.println("\tMatricula Aluno: " + emprestimo.getMatriculaAluno() + " ");
+		escrito.flush();
+		escrito.close();
+	}
+	@Override
+	public void alterar(Entidade entidade) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+	@Override
+	public void excluir(Entidade entidade) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void buscaPorId(Entidade entidade) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void buscaPorString(Entidade entidade) {
+		// TODO Auto-generated method stub
+		
+	}
+}

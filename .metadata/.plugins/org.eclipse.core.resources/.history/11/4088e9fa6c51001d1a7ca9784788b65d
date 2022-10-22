@@ -1,0 +1,38 @@
+package visao;
+
+import Fabrica.Fabrica;
+import entidade.EmprestimoEntidade;
+import entidade.Entidade;
+
+public class EmprestimoVisao extends Visao{
+
+	@Override
+	public void menu(Fabrica fabrica) {
+		// TODO Auto-generated method stub
+		int opcao = -1;
+		Entidade emprestimo;
+		String nomeLivro;
+		while(opcao != 0) 
+		{
+			System.out.println("1 - Cadastrar Emprestimo");
+			System.out.println("2 - Visualizar Emprestimo");
+			System.out.println("0 - Retornar");
+			
+			opcao = Integer.parseInt(Console.readLine());
+			
+			 switch (opcao) {
+
+		        case 1:
+		        	//Chamar as fábricas aqui
+		        	emprestimo = fabrica.createEntidade();
+		        	System.out.println("Nome Livro: ");
+		        	nomeLivro = Console.readLine();
+		            break;
+		        case 2:
+		        	break;
+		        default:
+		            System.out.println("Opcao Invalida!");
+		     }
+		}
+	}
+}

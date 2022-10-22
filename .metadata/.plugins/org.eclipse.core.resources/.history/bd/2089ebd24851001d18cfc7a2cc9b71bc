@@ -1,0 +1,5 @@
+package visao;
+
+public class LivroVisao extends Visao{
+
+}

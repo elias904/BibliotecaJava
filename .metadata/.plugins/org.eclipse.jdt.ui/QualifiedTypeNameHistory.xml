@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="entidade.Livro"/>
+    <fullyQualifiedTypeName name="persistencia.EmprestimoPersistencia"/>
+    <fullyQualifiedTypeName name="controlador.EmprestimoControlador"/>
+    <fullyQualifiedTypeName name="visao.EmprestimoVisao"/>
+    <fullyQualifiedTypeName name="entidade.LivroEntidade"/>
+    <fullyQualifiedTypeName name="persistencia.LivroPersistencia"/>
+    <fullyQualifiedTypeName name="controlador.LivroControlador"/>
+    <fullyQualifiedTypeName name="Fabrica.LivroFabrica"/>
+    <fullyQualifiedTypeName name="visao.LivroVisao"/>
+    <fullyQualifiedTypeName name="controlador.Controlador"/>
+    <fullyQualifiedTypeName name="persistencia.Persistencia"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="Fabrica.Fabrica"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="entidade.EmprestimoEntidade"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="entidade.Entidade"/>
+    <fullyQualifiedTypeName name="visao.Visao"/>
+</qualifiedTypeNameHistroy>

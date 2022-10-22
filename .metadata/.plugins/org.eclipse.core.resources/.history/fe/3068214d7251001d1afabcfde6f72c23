@@ -1,0 +1,9 @@
+package persistencia;
+
+public abstract class Persistencia {
+	public abstract void inserir();
+	public abstract void alterar();
+	public abstract void excluir();
+	public abstract void buscaPorId() ;
+	public abstract void buscaPorString();
+}

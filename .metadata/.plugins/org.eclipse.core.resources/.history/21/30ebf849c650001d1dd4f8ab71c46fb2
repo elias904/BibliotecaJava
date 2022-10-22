@@ -1,0 +1,43 @@
+package visao;
+
+public class Visao {
+	public static void main(String[] args) {
+        boolean executar = true;
+
+        while(executar) {
+            System.out.println("Menu");
+            System.out.println("1 - Realizar Emprestimo");
+            System.out.println("2 - Listar Emprestimo");
+            System.out.println("3 - Devolver Livro");
+            System.out.println("4 - Cadastrar Livro");
+            System.out.println("5 - Visualisar Livro");
+            System.out.println("6 - Excluir Livro");
+            System.out.println("7 - Sair");
+        }
+
+        int opcao = Integer.parseInt(Console.readLine());
+
+        switch (opcao) {
+
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            executar = false;
+            break;
+        default:
+            System.out.println("Opcao Invalida!");
+        }
+
+
+    }
+}

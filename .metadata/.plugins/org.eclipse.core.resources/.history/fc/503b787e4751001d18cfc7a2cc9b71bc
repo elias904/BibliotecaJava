@@ -1,0 +1,35 @@
+package Fabrica;
+
+import controlador.EmprestimoControlador;
+import entidade.EmprestimoEntidade;
+import persistencia.EmprestimoPersistencia;
+import visao.EmprestimoVisao;
+
+public class EmprestimoFabrica implements Fabrica<Object> {
+
+	@Override
+	public EmprestimoEntidade createEntidade() {
+		// TODO Auto-generated method stub
+		return new EmprestimoEntidade();
+	}
+
+	@Override
+	public EmprestimoPersistencia createPersistencia() {
+		// TODO Auto-generated method stub
+		//O retorno dessa função é diferente devido a propriedade singleton da classe
+		return EmprestimoPersistencia.getInstance();
+	}
+
+	@Override
+	public EmprestimoControlador createControlador() {
+		// TODO Auto-generated method stub
+		return new EmprestimoControlador();
+	}
+
+	@Override
+	public EmprestimoVisao createVisao() {
+		// TODO Auto-generated method stub
+		return new EmprestimoVisao();
+	}
+	
+}

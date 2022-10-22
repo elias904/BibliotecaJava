@@ -1,0 +1,9 @@
+package controlador;
+
+import entidade.EmprestimoEntidade;
+
+public abstract class Controlador {
+
+	public abstract void insereArray(EmprestimoEntidade emprestimo, int opcao);
+
+}

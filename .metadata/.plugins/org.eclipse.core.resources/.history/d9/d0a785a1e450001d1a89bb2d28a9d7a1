@@ -1,0 +1,38 @@
+package Fabrica;
+
+
+import controlador.LivroControlador;
+import entidade.LivroEntidade;
+import persistencia.LivroPersistencia;
+
+public class LivroFabrica implements Fabrica<Object>{
+
+	
+
+	@Override
+	public LivroEntidade createEntidade() {
+		// TODO Auto-generated method stub
+		return new LivroEntidade();
+		
+	}
+
+	@Override
+	public LivroPersistencia createPersistencia() {
+		// TODO Auto-generated method stub
+		//Como fazer esse retorno, sendo que LivroPersistencia é singleton
+		return;
+	}
+
+	@Override
+	public LivroControlador createControlador() {
+		// TODO Auto-generated method stub
+		return new LivroControlador();
+	}
+
+	@Override
+	public LivroVisao createVisao() {
+		// TODO Auto-generated method stub
+		return new LivroVisao();
+	}
+
+}

@@ -1,0 +1,30 @@
+package visao;
+
+import Fabrica.Fabrica;
+
+public class EmprestimoVisao extends Visao{
+	public void Menu(Fabrica fabrica) {
+		int opcao = -1;
+		while(opcao != 0) 
+		{
+			System.out.println("1 - Cadastrar Emprestimo");
+			System.out.println("2 - Visualizar Emprestimo");
+			System.out.println("0 - Retornar");
+			
+			opcao = Integer.parseInt(Console.readLine());
+			
+			 switch (opcao) {
+
+		        case 1:
+		        	//Chamar as fábricas aqui
+		        	
+		            break;
+		        case 2:
+		        	break;
+		        default:
+		            System.out.println("Opcao Invalida!");
+		     }
+		}
+		
+	}
+}

@@ -1,0 +1,15 @@
+package entidade;
+
+import java.util.Date;
+
+public class EmprestimoEntidade extends Entidade{
+	public String nomeLivro;
+	
+	public String getNomeLivro() {
+		return nomeLivro;
+	}
+	public void setNomeLivro(String nomeLivro) {
+		this.nomeLivro = nomeLivro;
+	}
+	
+}
