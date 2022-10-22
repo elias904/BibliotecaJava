@@ -34,4 +34,10 @@ public class EmprestimoControlador extends Controlador{
 		persistencia = fabrica.createPersistencia();
 		persistencia.visualizar();
 	}
+	@Override
+	public void buscaIdEmprestimo(int id) {
+		// TODO Auto-generated method stub
+		persistencia = fabrica.createPersistencia();
+		persistencia.buscaPorId(id);
+	}
 }

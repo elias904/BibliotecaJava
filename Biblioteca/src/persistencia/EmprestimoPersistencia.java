@@ -81,9 +81,19 @@ public class EmprestimoPersistencia extends Persistencia{
 		
 	}
 	@Override
-	public void buscaPorId(Entidade entidade) {
+	public void buscaPorId(int id) {
 		// TODO Auto-generated method stub
-		
+		for(Entidade e: emprestimos) 
+		{
+			if(e.getId().equals(id)) {
+				Visao visao;
+				Fabrica fabrica;
+				fabrica = Fabrica.getFactory("Emprestimo");
+				visao = fabrica.createVisao();
+				visao.viewBusca(e);
+				break;
+			}
+		}
 	}
 	@Override
 	public void buscaPorString(Entidade entidade) {

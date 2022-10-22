@@ -22,6 +22,7 @@ public class EmprestimoVisao extends Visao{
 		
 		String nomeLivro;
 		String matriculaAluno;
+		Integer id;
 		
 		String novoLivroNome;
 		String novaMatriculaAluno;
@@ -93,16 +94,11 @@ public class EmprestimoVisao extends Visao{
 		        	break;
 		        case 5:
 		        	emprestimo = (EmprestimoEntidade) fabrica.createEntidade();
-		        	System.out.println("Nome Livro: ");
-		        	nomeLivro = Console.readLine();
-		        	emprestimo.setNomeLivro(nomeLivro);
-		        	System.out.println("Matricula: ");
-		        	matriculaAluno = Console.readLine();
-		        	emprestimo.setMatriculaAluno(matriculaAluno);
-		        	
+		        	System.out.println("Id: ");
+		        	id = Integer.parseInt(Console.readLine());
+		        	emprestimo.setId(id);
 		        	controlador = fabrica.createControlador();
-		        	
-		        	//Parei aqui
+		        	controlador.buscaIdEmprestimo(id);
 		        	break;
 		        default:
 		            System.out.println("Opcao Invalida!");
@@ -112,12 +108,22 @@ public class EmprestimoVisao extends Visao{
 
 	@Override
 	public void view(List<Entidade> Entidade) {
+
 		// TODO Auto-generated method stub
 		for(Entidade e: Entidade) {
+			System.out.println("Id: " + e.getId());
 			System.out.println("Nome Livro: " + e.getNomeLivro());
 			System.out.println("Matricula: " + e.getMatriculaAluno());
 			System.out.println("\n");
 		}
 		
+	}
+
+	@Override
+	public void viewBusca(Entidade emprestimo) {
+		// TODO Auto-generated method stub
+		System.out.println("Id: " + emprestimo.getId());
+		System.out.println("Livro: " + emprestimo.getNomeLivro());
+		System.out.println("Matricula: " + emprestimo.getMatriculaAluno());
 	}
 }

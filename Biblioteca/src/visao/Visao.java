@@ -43,4 +43,5 @@ public abstract class Visao {
         }
     }
 	public abstract void view(List<Entidade> Entidade);
+	public abstract void viewBusca(Entidade entidade);
 }

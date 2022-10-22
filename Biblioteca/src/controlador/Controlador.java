@@ -14,5 +14,7 @@ public abstract class Controlador {
 	public abstract void excluir(Entidade entidade);
 
 	public abstract void visualizar();
+
+	public abstract void buscaIdEmprestimo(int id);
 	
 }
